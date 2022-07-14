@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_detalhes_superhero"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context=".activities.DetalhesSuperHeroBancoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/button_AlterarSuperHero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/AzulNavy"
+                android:drawableLeft="@android:drawable/ic_menu_edit"
+                android:text="Alterar"></Button>
+
+            <Button
+                android:id="@+id/button_ExcluirSuperHero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/red"
+                android:drawableLeft="@android:drawable/ic_menu_delete"
+                android:text="Excluir"></Button>
+
+        </LinearLayout>
+
+        <include layout="@layout/layout_detalhes_superhero_api"></include>
+
+    </LinearLayout>
+
+</ScrollView>

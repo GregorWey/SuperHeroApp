@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AdicionarSuperheroActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome:"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/editTextNomeadicionar"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20dp"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Slug:"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/editTextSlugadicionar"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20dp"></EditText>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Estatísticas"
+            android:textSize="30dp"
+            android:textStyle="bold"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Inteligência:"
+                        android:textSize="20dp"></TextView>
+
+                    <EditText
+                        android:id="@+id/editTextInteligenciaadicionar"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="normal"></EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Força:"
+                        android:textSize="20dp"></TextView>
+
+                    <EditText
+                        android:id="@+id/editTextForcaadicionar"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="normal"></EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Velocidade:"
+                        android:textSize="20dp"></TextView>
+
+                    <EditText
+                        android:id="@+id/editTextVelocidadeadicionar"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="normal"></EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Durabilidade:"
+                        android:textSize="20dp"></TextView>
+
+                    <EditText
+                        android:id="@+id/editTextDurabilidadeadicionar"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="normal"></EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Poder:"
+                        android:textSize="20dp"></TextView>
+
+                    <EditText
+                        android:id="@+id/editTextPoderadicionar"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="normal"></EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Combate:"
+                        android:textSize="20dp"></TextView>
+
+                    <EditText
+                        android:id="@+id/editTextCombateadicionar"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="normal"></EditText>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Aparência"
+            android:textSize="30dp"
+            android:textStyle="bold"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sexo:"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/editTextSexoadicionar"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="20dp"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Raça:"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/editTextRacaadicionar"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="20dp"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Altura:"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/editTextAltura1adicionar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="20dp"></EditText>
+
+            <EditText
+                android:id="@+id/editTextAltura2adicionar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="20dp"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Peso:"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/editTextPeso1adicionar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="20dp"></EditText>
+
+            <EditText
+                android:id="@+id/editTextPeso2adicionar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="20dp"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cor dos Olhos:"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/editTextCorOlhosadicionar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="20dp"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cor dos Cabelos:"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/editTextCorCabelosadicionar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="20dp"></EditText>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Biografia"
+            android:textSize="30dp"
+            android:textStyle="bold"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome Completo:"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/editTextNomeCompletoadicionar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="20dp"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AlterEgos:"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/editTextAlterEgosadicionar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="20dp"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apelidos:"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/editTextApelidosadicionar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="20dp"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Local de Nascimento:"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/editTextLocalNascimentoadicionar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="20dp"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Primeira Aparição:"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/editTextPrimeiraAparicaoadicionar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="20dp"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Editora:"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/editTextEditoraadicionar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="20dp"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alinhamento:"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/editTextAlinhamentoadicionar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="20dp"></EditText>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Trabalho"
+            android:textSize="30dp"
+            android:textStyle="bold"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ocupação:"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/editTextOcupacaoadicionar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="20dp"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Base:"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/editTextBaseadicionar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="20dp"></EditText>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Conexões"
+            android:textSize="30dp"
+            android:textStyle="bold"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grupo:"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/editTextGrupoadicionar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="20dp"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Relativos:"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/editTextRelativosadicionar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="20dp"></EditText>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="URL1:"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/editTextURLImagem1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="20dp"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="URL2:"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/editTextURL2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="20dp"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="URL3:"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/editTextURL3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="20dp"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="URL4:"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/editTextURL4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="20dp"></EditText>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonSalvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/green"
+            android:drawableLeft="@android:drawable/ic_menu_save"
+            android:text="Salvar"
+            android:textColor="@color/black"
+            android:textSize="20dp"></Button>
+
+    </LinearLayout>
+
+</ScrollView>
